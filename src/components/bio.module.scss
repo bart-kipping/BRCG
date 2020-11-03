@@ -1,0 +1,12 @@
+.container {
+  max-width: 100%;
+  display: grid;
+  grid-gap: 1em;
+  flex-direction: column;
+  * {
+    max-width: 100%;
+  }
+  .social {
+    width: 2em;
+  }
+}

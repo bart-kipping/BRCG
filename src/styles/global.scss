@@ -1,0 +1,101 @@
+$paddingLR: 16vw;
+$blue: #1a1c32;
+$yellow: #f8c91c;
+$grey: #81807e;
+// $grey: #6b6b6a;
+
+html {
+  // background-color: lavender;
+  scroll-behavior: smooth;
+  * {
+    // max-width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    z-index: 1;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  opacity: 0;
+}
+
+.subHeader {
+  background-color: $blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 5em $paddingLR;
+  h1 {
+    .dot {
+      font-size: 2em;
+    }
+  }
+  p {
+    color: $grey;
+    line-height: 1.5em;
+  }
+}
+
+.textContainer {
+  padding: 3em $paddingLR;
+  .dot {
+    font-size: 2em;
+  }
+  h2 {
+    margin-bottom: 1em;
+  }
+  b {
+    font-weight: bold;
+  }
+  ul {
+    padding-left: 2em;
+    li {
+      color: $grey;
+      p {
+        margin: 0em;
+        color: $grey;
+      }
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+}
+
+p {
+  line-height: 2em;
+  font-weight: lighter;
+  font-size: 1.2em;
+  color: $grey;
+}
+
+.dot {
+  color: $yellow;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4em;
+  line-height: 1rem;
+}
+
+.yellow {
+  color: $yellow;
+  font-weight: bold;
+  font-variant: uppercase;
+}
+
+form {
+  input {
+    padding: 1em;
+  }
+}
+
+.bio {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3em;
+}

@@ -1,0 +1,52 @@
+$paddingLR: 16vw;
+
+footer {
+  //   background-color: lightcyan;
+  display: grid;
+  justify-self: flex-end;
+  padding: 2em 0em;
+  grid-row-gap: 3em;
+
+  .menu {
+    height: fit-content;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    list-style: none;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    font-size: larger;
+    text-transform: uppercase;
+    padding: 0em $paddingLR + 2vw;
+  }
+
+  .mottoContainer {
+    padding: 0em $paddingLR;
+  }
+  .motto {
+    display: block;
+    width: 100%;
+    justify-self: center;
+    background-color: lightgrey;
+
+    text-align: center;
+    font-size: 2em;
+    padding: 2em;
+    margin-bottom: 1em;
+
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .wijzer {
+    // background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4em $paddingLR;
+    border-top: 1px solid lightgrey;
+    q {
+      margin-left: 2em;
+    }
+  }
+}
